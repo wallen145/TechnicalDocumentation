@@ -1,0 +1,397 @@
+:root {
+    --main-bg-color: #F5DEB3;
+    --menu-bg-color: #554E44;
+    --navbar-text-color: #FFFFFF;
+    --navbar-hover-color: coral;
+    --navbar-background-color: #997950;
+    --text-color: #59260B;
+    --link-text-color: black;
+    --link-h: over-color purple;
+    --border-color: --text-accent-color;
+    --button-default-color: blue;
+    --heading-font-family: 'Open Sans', sans-serif;
+    --heading-font-weight: bold;
+    --button-font-family: 'Open Sans', sans-serif;
+    --text-font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html,
+body {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    padding: 0 5vw 0 5vw;
+    margin: 0;
+    /* scroll-behavior: smooth; */
+    scroll-behavior: auto;
+    background-color: var(--main-bg-color);
+}
+
+.flex-container {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+}
+
+.flex-left {
+    height: 100vh;
+    width: 15vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: var(--navbar-background-color);
+    overflow-x: hidden;
+    padding: 2vw;
+}
+
+.flex-right {
+    margin: 5vw;
+    width: 85vw;
+}
+
+
+/*
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    margin: 0;
+    background: var(--menu-bg-color);
+    color: white;
+    height: 7vh;
+    z-index: 100;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    height: 7vh;
+}
+
+#navbar li a {
+    color: white;
+    font-family: var(--text-font-family);
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 0.5em;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+#navbar li a:hover {
+    color: coral;
+}
+
+#nav ul li:nth-of-type(1) {
+    margin-right: auto;
+}
+
+#navbar-space {
+    height: 5vh;
+}
+*/
+
+#mobile-nav {
+    display: none;
+    color: white;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5em;
+    margin: 0;
+}
+
+@media screen and (orientation: portrait) {
+    nav {
+        background: linen;
+    }
+    ul li a {
+        color: var(--men);
+    }
+}
+
+@media screen and (hover: none) {
+    ul li a {
+        font-size: 8px;
+    }
+    #nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 62.5em) {
+    ul li a {
+        font-size: 2em;
+    }
+}
+
+.mylabel {
+    font-family: var(--text-font-family);
+    color: var(--text-color);
+}
+
+.myh0 {
+    font-family: var(--heading-font-family);
+    font-size: 3.75em;
+    font-weight: var(--heading-font-weight);
+    color: var(--text-color);
+}
+
+.myh1 {
+    font-family: var(--heading-font-family);
+    font-size: 3.125em;
+    font-weight: var(--heading-font-weight);
+    color: var(--text-color);
+}
+
+.myh2 {
+    /*font-family: var(--my-font-family);*/
+    font-family: var(--heading-font-family);
+    font-size: 2.635em;
+    font-weight: var(--heading-font-weight);
+    color: var(--text-color);
+}
+
+.myh3 {
+    font-family: var(--heading-font-family);
+    font-size: 2.25em;
+    font-weight: var(--heading-font-weight);
+    color: var(--text-color);
+}
+
+.myh4 {
+    font-family: var(--heading-font-family);
+    font-size: 1.875em;
+    font-weight: var(--heading-font-weight);
+    color: var(--text-color);
+}
+
+.myh5 {
+    font-family: var(--heading-font-family);
+    font-size: 1.5em;
+    font-weight: var(--heading-font-weight);
+    color: var(--text-color);
+}
+
+.myh6 {
+    font-family: var(--heading-font-family);
+    font-size: 1.125em;
+    font-weight: var(--heading-font-weight);
+    color: var(--text-color);
+}
+
+.p-tag {
+    border: none;
+    text-indent: 10em;
+    font-family: var(--text-font-family);
+    font-size: 1em;
+    align-self: left;
+}
+
+.a-tag {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+a.a-tag {
+    font-family: var(--text-font-family);
+}
+
+a.a-tag:link {
+    color: blue;
+}
+
+a.a-tag:visited {
+    color: #800000
+}
+
+a.a-tag:hover {
+    color: green;
+}
+
+a.a-tag:active {
+    color: var(--text-color);
+}
+
+.myul {
+    font-family: var(--text-font-family);
+    color: brown;
+}
+
+.myli {
+    font-family: var(--text-font-family);
+    color: var(--text-color);
+}
+
+.myli:hover {
+    background-color: #981816;
+}
+
+.myinputtext {
+    font-weight: normal;
+    font-size: .875em;
+    color: #674C47
+}
+
+.mybutton {
+    background-color: var(--button-default-color);
+    border: none;
+    color: white;
+    padding: .9375em 1.4375em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--button-font-family);
+    font-size: 1em;
+    font-weight: normal;
+    margin: .25em .125em;
+    cursor: pointer;
+    border-radius: .75em;
+}
+
+.mysubmitbutton {
+    background-color: green;
+}
+
+.mycancelbutton {
+    background-color: red;
+}
+
+.mydisabledbutton {
+    background-color: gray;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.mysmallvideo {
+    width: 320;
+    height: 240;
+}
+
+.mymediumvideo {
+    width: 640;
+    height: 480;
+}
+
+.mylargevideo {
+    width: 1280;
+    height: 960;
+}
+
+.display-page {
+    min-height: 100vh;
+    height: 100vh;
+    width: 70vw;
+    padding: 5vh 0 0 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.2em;
+    color: var(--text-color);
+    background-color: var(--main-bg-color);
+}

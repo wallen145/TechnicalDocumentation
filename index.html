@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet" />
+    <!-- Light 300, Light 300 Italic, Regular 400, Bold 700  available from link above-->
+</head>
+
+<body>
+    <div class="flex-container">
+        <nav id="navbar" class="flex-left">
+            <header class="myh3">Menu</header>
+            <br>
+
+            <a href="#Custom_CSS_Theme" class="a-tag nav-link">Custom CSS Theme</a><br>
+            <a href="#Headings" class="a-tag nav-link">Headings</a><br>
+            <a href="#Paragraph" class="a-tag nav-link">Paragraph</a><br>
+            <a href="#Anchor" class="a-tag nav-link">Anchor</a><br>
+            <a href="#Unordered_List" class="a-tag nav-link">Unordered List</a><br>
+            <a href="#List_Item" class="a-tag nav-link">List Item</a><br>
+            <a href="#Input" class="a-tag nav-link">Input</a><br>
+            <a href="#Check_Box" class="a-tag nav-link">Check Box</a><br>
+            <a href="#Radio_Button" class="a-tag nav-link">Radio Button</a><br>
+            <a href="#Button" class="a-tag nav-link" target="_blank">Button</a><br>
+            <a href="#Embedded_Video" class="a-tag nav-link">Embedded Video</a><br>
+            <a href="#IFrame_Content" class="a-tag nav-link">IFrame Content</a>
+
+        </nav>
+    </div>
+    <main id="main-doc" class="flex-right">
+        <section id="Custom_CSS_Theme" class="display-page main-section">
+            <header>
+                <h1 class="myh0">Custom CSS Theme</h1>
+            </header>
+            <p>This document displays the specific elements of the Shades of Brown CSS theme.</p>
+
+            <nav id="mobile-nav">
+                <details>
+                    <summary>Menu</summary>
+                    <ul class="mobile-menu">
+                        <a href="#Custom_CSS_Theme">Custom CSS Theme</a>
+                        <a href="#Headings">Headings</a>
+                        <a href="#Paragraph">Paragraph</a>
+                        <a href="#Anchor">Anchor</a>
+                        <a href="#Unordered_List">Unordered List</a>
+                        <a href="#Input">Input</a>
+                        <a href="#Check_Box">Check Box</a>
+                        <a href="#Radio_Button">Radio Button</a>
+                        <a href="#Button">Button</a>
+                        <a href="#Embedded_Video">Embedded Video</a>
+                        <a href="#IFrame_Content">IFrame Content</a>
+                    </ul>
+                </details>
+            </nav>
+        </section>
+        </header>
+        <div class="flex-right">
+            <section id="Headings" class="display-page main-section">
+                <header>
+                    <h2 class="myh0">Headings</h2>
+                </header>
+                <br><br>
+                <p>
+                    <h1 class="myh1">Here is an my h1.</h1>
+                    <h2 class="myh2">Here is an my h2.</h2>
+                    <h3 class="myh3">Here is an my h3.</h3>
+                    <h4 class="myh4">Here is an my h4.</h4>
+                    <h5 class="myh5">Here is an my h5.</h5>
+                    <h6 class="myh6">Here is an my h6.</h6>
+                </p>
+                <br><br>
+                <p> Example of the .myh1 class with the relevant CSS variables:
+                    <br>
+
+                    <pre>
+                        --heading-font-family: 'Open Sans', sans-serif;
+                        --heading-font-weight: bold;
+                        --text-color: rgb(101, 67, 33);
+
+
+                            .myh1 {
+                                font-family: var(--heading-font-family);
+                                font-size: 50px;
+                                font-weight: var(--heading-font-weight);
+                                color: var(--text-color);
+                            }
+                        </pre>
+                </p>
+            </section>
+            <section id="Paragraph" class="display-page main-section">
+                <header>
+                    <h2 class="myh0">Paragraph</h2>
+                </header>
+                <br><br>
+                <p class="p-tag">The p-tag tag class of this display theme causes text to be indented at the start of the paragraph.</p>
+                <h3 class="myh4">Here is an example of the <code>p</code> element with no styling:</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magnam mollitia, quam placeat deserunt quos nostrum, asperiores esse animi qui reprehenderit quis repellendus ratione dolorum? Modi dolorum inventore suscipit voluptate.
+                </p>
+                <h3 class="myh5">Here is an example using <code>p</code> element with the p-tag styling:</h3>
+                <p class="p-tag">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia totam voluptatem, dignissimos laudantium deserunt tempora! Facilis veniam at sint similique iure veritatis quae voluptas, quod placeat doloremque animi libero.
+                </p>
+            </section>
+            <section id="Anchor" class="display-page main-section">
+                <header>
+                    <h2 class="myh0">Anchor</h2>
+                </header>
+                <br><br>
+                <p class="p-tag">
+                    The a-tag class for the anchor tag displays the content with a specific color scheme depending on the the state of othe link. When the link is unvisited, it is colored blue, after it is visited it is green, but when the cursor hovers over the link it
+                    will be hot red, and when the link is active it will be brown.
+                </p>
+                <br><br>
+                <p>Here is an example of the <code>a</code> element with no styling: </p>
+                <a href="http://www.learningaboutelectronics.com/Articles/How-to-style-an-anchor-tag-with-CSS.php" target="_blank">How to style an ancohor tag
+                </a>
+
+                <p>Here is an example of the <code>a</code> element using the a-tag class styling: </p>
+                <a href="http://www.learningaboutelectronics.com/Articles/How-to-style-an-anchor-tag-with-CSS.php" class="a-tag" target="_blank">How to style an ancohor tag
+                </a>
+            </section>
+            <section id="Unordered_List" class="display-page main-section">
+                <header>
+                    <h2 class="myh0">Unordered List</h2>
+                </header>
+                <br><br>
+                <p class="p-tag">Write something about unordered lists.</p>
+                <p>
+                    Example <code>ul</code> element with no styling
+                    <ul>
+                        <li>Bread</li>
+                        <li>Milk</li>
+                        <li>Cheese</li>
+                    </ul>
+                </p>
+                <p>
+                    Example <code>ul</code> using the myul class for styling:
+                    <ul class="myul">
+                        <li>Bread</li>
+                        <li>Milk</li>
+                        <li>Cheese</li>
+                    </ul>
+                </p>
+            </section>
+            <section id="List_Item" class="display-page main-section">
+                <header>
+                    <h2 class="myh0">List Item</h2>
+                </header>
+                <p class="p-tag">Here is something about the <code>li</code> element...</p>
+            </section>
+            <section id="Input" class="display-page main-section">
+                <header>
+                    <h2 class="myh0">Input</h2>
+                </header>
+                <p class="p-tag">Here is something about the <code>type="text"</code> attribute version of the <code>input</code> element.</p>
+                <label for="default-text-input" class=".mylabel">Default text input:
+                    <input id="default-text-input" type="text" prompt="Default text input field"/>
+                </label>
+                <label for="styled-text-input" class=".mylabel">Styled text input:
+                    <input id="styled-text-input" class="myinputtext" type="text" prompt="Styled text input field"/>
+                </label>
+            </section>
+
+            <section id="Check_Box" class="display-page main-section">
+                <header>
+                    <h2 class="myh2">Check Box</h2>
+                </header>
+                <p class="p-tag">Here is something about the <code>type="checkbox"</code> attribute version of the <code>input</code> element.</p>
+                <label for="default-checkbox-input " class=".mylabel">Default checkbox input:
+                    <input id="default-checkbox-input " type="checkbox" />
+                </label>
+            </section>
+
+            <section id="Radio_Button" class="display-page main-section">
+                <header>
+                    <h2 class="myh2">Radio Button</h2>
+                </header>
+                <p class="p-tag">Here is something about the <code>type="radiobutton"</code> attribute version of the <code>input</code> element.</p>
+                <label>Gender            
+                    <input id="malechoice" class="myradiobutton" type="radio" name="gender" value="male" />
+                    <input id="single-choice" class="myradiobutton" type="radio" name="gender" value="female" />
+                </label>
+            </section>
+
+            <section id="Button" class="display-page main-section">
+                <header>
+                    <h2 class="myh2">Button</h2>
+                </header>
+                Default button: <button class="mybutton">Ok</button> Submit button: <button class="mybutton mysubmitbutton">Submit</button> Cancel button: <button class="mybutton mycancelbutton">Cancel</button> Disabled button: <button class="mybutton mysubmitbutton mydisabledbutton">Submit</button>
+            </section>
+
+            <section id="Embedded_Video" class="display-page main-section">
+                <header>
+                    <h2 class="myh2">Embedded Video</h2>
+                </header>
+                <video class="mysmallvideo" width="25% " controls>
+                    <source src="squirrel.mp4 " type="video/mp4 " />
+                    Your browser does not support the video tag.
+                </video>
+                <caption>
+                    <h3 class="myh3">Squirrel eating</h3>
+                </caption>
+            </section>
+
+            <section id="IFrame_Content" class="display-page main-section">
+                <header>
+                    <h2 class="myh2">IFrame Content</h2>
+                </header>
+                <iframe class="mymediumvideo" src="https://www.youtube.com/embed/s4BibernJxU " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen>
+                
+                </iframe>
+                <caption>
+                    <h3 class="myh3">Just a youtube.com video</h3>
+                </caption>
+            </section>
+
+        </div>
+
+    </main>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
